@@ -1,0 +1,45 @@
+---
+title: "How to Write a Picture Books Article"
+slug: how-to-write-an-article
+summary: "A starter template: pick one idea, draw it first, then explain the drawing. Copy this file when you write your own."
+author: "Picture Books"
+authorRole: "Starter template"
+topics: ["Meta"]
+date: "2026-11-07"
+diagram: "/diagrams/how-an-article-ships.svg"
+diagramCaption: "An article starts as a draft, gets reviewed in a pull request, and goes live when it's merged."
+readingMinutes: 2
+---
+
+Every article here starts with a picture. If you can't draw the idea yet, that usually means you don't understand it yet, and working that out is the reason to write it down.
+
+## Pick one idea
+
+Choose something small enough for a single diagram. "How a cache stampede happens" works. "Caching" doesn't.
+
+## Draw it first
+
+Use whatever is quickest. For a sequence of steps, a Mermaid code fence is often enough:
+
+```mermaid
+sequenceDiagram
+  participant Author
+  participant Reviewer
+  participant Site
+  Author->>Reviewer: Open a pull request
+  Reviewer-->>Author: Suggest changes
+  Author->>Reviewer: Update the article
+  Reviewer->>Site: Merge and publish
+```
+
+For something more visual, draw it in the editor at `/write`, or add an SVG to `public/diagrams/` and place it anywhere in the text:
+
+<Diagram src="/diagrams/how-an-article-ships.svg" caption="The same diagram as the top of this page, placed inline." />
+
+## Then explain the picture
+
+Walk through the diagram in the order someone would read it. Say what each part does and why it's there. Anything the diagram doesn't need can probably be cut.
+
+## Publish it
+
+Add your file to `content/articles/` and open a pull request. [CONTRIBUTING.md](https://github.com/Tochi-Onwuasoanya/picture-books/blob/main/CONTRIBUTING.md) has the details, including one MDX gotcha worth knowing about.

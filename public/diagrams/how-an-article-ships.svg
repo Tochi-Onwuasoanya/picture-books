@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 200" role="img" aria-label="An article moves from draft to pull request to published">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#0f9488"/>
+    </marker>
+  </defs>
+  <g font-family="system-ui, sans-serif" font-size="20" font-weight="600" text-anchor="middle" fill="#0b1f1c">
+    <rect x="20" y="60" width="160" height="80" rx="14" fill="#d9f2ee" stroke="#0f9488" stroke-width="3"/>
+    <text x="100" y="107">Draft</text>
+    <rect x="240" y="60" width="160" height="80" rx="14" fill="#fff1de" stroke="#ff9f43" stroke-width="3"/>
+    <text x="320" y="107">Pull request</text>
+    <rect x="460" y="60" width="160" height="80" rx="14" fill="#d9f2ee" stroke="#0f9488" stroke-width="3"/>
+    <text x="540" y="107">Published</text>
+  </g>
+  <g stroke="#0f9488" stroke-width="3" fill="none" marker-end="url(#arrow)">
+    <path d="M184 100 H234"/>
+    <path d="M404 100 H454"/>
+  </g>
+</svg>
