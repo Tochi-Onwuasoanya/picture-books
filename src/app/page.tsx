@@ -10,9 +10,6 @@ export default function Home() {
   return (
     <div className="mx-auto max-w-5xl px-5">
       <section className="flex flex-col items-start gap-5 py-16 sm:py-20">
-        <span className="inline-flex items-center gap-1.5 rounded-full bg-accent-soft px-3 py-1 text-xs font-semibold text-accent">
-          Notes from a system design study group
-        </span>
         <h1 className="font-display max-w-2xl text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
           Technical topics,{" "}
           <span className="text-accent">explained one diagram</span> at a
